@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="2.1" xmlns="http://java.sun.com/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
+Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2022.05.19 a las 01:45:28 PM CDT 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="https://t4is.uv.mx/prestamosFEIUV">
+    <schemaBindings map="false">
+      <package name="https.t4is_uv_mx.prestamosfeiuv"/>
+    </schemaBindings>
+    <bindings scd="tns:VerCubiculoResponse">
+      <class ref="https.t4is_uv_mx.prestamosfeiuv.VerCubiculoResponse"/>
+    </bindings>
+    <bindings scd="tns:VerReportesResponse">
+      <class ref="https.t4is_uv_mx.prestamosfeiuv.VerReportesResponse"/>
+    </bindings>
+    <bindings scd="tns:RegistrarPrestamoRequest">
+      <class ref="https.t4is_uv_mx.prestamosfeiuv.RegistrarPrestamoRequest"/>
+    </bindings>
+    <bindings scd="tns:RegistrarPrestamoResponse">
+      <class ref="https.t4is_uv_mx.prestamosfeiuv.RegistrarPrestamoResponse"/>
+    </bindings>
+    <bindings scd="tns:VerCubiculoRequest">
+      <class ref="https.t4is_uv_mx.prestamosfeiuv.VerCubiculoRequest"/>
+    </bindings>
+    <bindings scd="tns:ReportarCubiculoRequest">
+      <class ref="https.t4is_uv_mx.prestamosfeiuv.ReportarCubiculoRequest"/>
+    </bindings>
+    <bindings scd="tns:ReportarCubiculoResponse">
+      <class ref="https.t4is_uv_mx.prestamosfeiuv.ReportarCubiculoResponse"/>
+    </bindings>
+    <bindings scd="tns:VerReportesRequest">
+      <class ref="https.t4is_uv_mx.prestamosfeiuv.VerReportesRequest"/>
+    </bindings>
+  </bindings>
+</bindings>
+

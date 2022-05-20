@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://t4is.uv.mx/prestamosFEIUV"
+   xmlns:tns="https://t4is.uv.mx/prestamosFEIUV" elementFormDefault="qualified">
+  <xs:element name="RegistrarPrestamoRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="matricula" type="xs:string" />
+        <xs:element name="carrera" type="xs:string" />
+        <xs:element name="tiempo" type="xs:string" />
+        <xs:element name="diaS" type="xs:string" />
+        <xs:element name="diaN" type="xs:string" />
+        <xs:element name="mes" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarPrestamoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="confirmacion" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VerCubiculoRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nomCubiculo" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VerCubiculoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="horario">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="matricula" type="xs:string" />
+              <xs:element name="carrera" type="xs:string" />
+              <xs:element name="tiempo" type="xs:string" />
+              <xs:element name="diaS" type="xs:string" />
+              <xs:element name="diaN" type="xs:string" />
+              <xs:element name="mes" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReportarCubiculoRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="fecha" type="xs:string" />
+        <xs:element name="hora" type="xs:string" />
+        <xs:element name="carrera" type="xs:string" />
+        <xs:element name="descripcion" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReportarCubiculoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="verificacion" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VerReportesRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="cubicNom" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VerReportesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="listaReportes">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fecha" type="xs:string" />
+              <xs:element name="hora" type="xs:string" />
+              <xs:element name="carrera" type="xs:string" />
+              <xs:element name="descripcion" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
